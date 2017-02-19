@@ -9,12 +9,12 @@
 }
 
 body {
-	background: -moz-linear-gradient(-45deg, #cebe29 0%, #9b1f50 33%, #2989d8 71%, #89b4ff 91%);
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#cebe29), color-stop(33%,#9b1f50), color-stop(71%,#2989d8), color-stop(91%,#89b4ff));
-	background: -webkit-linear-gradient(-45deg, #cebe29 0%,#9b1f50 33%,#2989d8 71%,#89b4ff 91%);
-	background: -o-linear-gradient(-45deg, #cebe29 0%,#9b1f50 33%,#2989d8 71%,#89b4ff 91%);
-	background: -ms-linear-gradient(-45deg, #cebe29 0%,#9b1f50 33%,#2989d8 71%,#89b4ff 91%);
-	background: linear-gradient(135deg, #cebe29 0%,#9b1f50 33%,#2989d8 71%,#89b4ff 91%);
+	background: -moz-linear-gradient(-45deg, #cebe29 0%, #01535b 33%, #2989d8 71%, #89b4ff 91%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#cebe29), color-stop(33%,#01535b), color-stop(71%,#2989d8), color-stop(91%,#89b4ff));
+	background: -webkit-linear-gradient(-45deg, #cebe29 0%,#01535b 33%,#2989d8 71%,#89b4ff 91%);
+	background: -o-linear-gradient(-45deg, #cebe29 0%,#01535b 33%,#2989d8 71%,#89b4ff 91%);
+	background: -ms-linear-gradient(-45deg, #cebe29 0%,#01535b 33%,#2989d8 71%,#89b4ff 91%);
+	background: linear-gradient(135deg, #cebe29 0%,#01535b 33%,#2989d8 71%,#89b4ff 91%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cebe29', endColorstr='#89b4ff',GradientType=1 );
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
@@ -25,25 +25,41 @@ body {
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	text-align: center;
 }
-body h1{
-	letter-spacing: 6px;
-	text-transform: uppercase;
-}
-body header h1{
-	float: left;
-}
-body h1 {
-	/*padding-top: 20px;
-	font-size: 23px;
-	color: rgba(255,255,255,0.9);
-	color: rgba(255,255,255,0.9);
-	text-shadow: 0 1px 1px rgba(0,0,0,0.3);*/
+body header h2{
 	font-size: 25px;
-	line-height: 38px;
+	line-height: 30px;
 	margin: 0;
+}
+.customHeader {
+	padding: 10px 10px 10px 10px;
+	height: 30px;
+}
+.customHeader h2{
+
 	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+}
+.customHeader h2 {
 	color: #fff;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+}
+.customHeader h2 a, 
+.customHeader h2 span {
+	color: rgba(255,255,255,0.3);
+	font-size: 18px;
+	letter-spacing: 3px;
+	white-space: nowrap;
+}
+.customHeader h2 a {
+	color: rgba(255,255,255,0.5);
+}
+.customHeader .customMounth{
+	width: 40%;
+	float: right;
+}
+.no-touch .customHeader h2 a:hover {
+	color: rgba(255,255,255,0.9);
 }
 table {
 	margin: 10px auto;
@@ -83,9 +99,6 @@ td {
 	vertical-align: top;
 
 }
-td:hover {
-    background: rgba(115,255,111,0.4);
-}
 th {
 	color: rgba(255,255,255,0.9);
 	text-shadow: 0 1px 1px rgba(0,0,0,0.3);
@@ -110,4 +123,14 @@ tfoot th{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 	background: rgba(255,255,255,0.25);
+}
+td:hover { 
+	background: rgba(115,255,111,0.4);
+	transform: scaleX(1.0);
+  	box-shadow:3px 5px 7px rgba(0,0,0,.7);
+	cursor:pointer;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }

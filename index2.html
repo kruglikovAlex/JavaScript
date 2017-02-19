@@ -12,7 +12,10 @@
                 <header class="clearfix">
                     <h1>Calendar <span>February 2017</span></h1>
                     <nav class="codrops-demos">
+                        <a href="index3.html">Day</a>
+                        <span>Week</span>
                         <a href="index.html">Mounth</a>
+                        <a href="index4.html">4 Days</a>
                     </nav>
                 </header>
                 <div class="pricing_table">
@@ -61,7 +64,10 @@
                             <td>
                                 <ul class="cbp_tmtimeline">
                                     <li class="all-day"><time class="cbp_timeSun" datetime="all-day"><span></span></time></li>
-                                    <li><time class="cbp_timeSun" datetime="00:00"><span></span></time></li>
+                                    <li><time class="cbp_timeSun" datetime="00:00">
+                                                <a class="addEvent" href="#modal">&emsp;Add Event</a>
+                                        </time>
+                                    </li>
                                     <li><time class="cbp_timeSun" datetime="01:00"><span></span></time></li>
                                     <li><time class="cbp_timeSun" datetime="02:00"><span></span></time></li>
                                     <li><time class="cbp_timeSun" datetime="03:00"><span></span></time></li>
@@ -266,6 +272,23 @@
                     </tbody>
                 </table>
             </div>
+                <aside class="modal" id="modal">
+                    <header>
+                        <h2>Event | Reminder</h2>
+                    </header>
+                    <section>
+                        <input tabindex="0" autocomplete="off" placeholder="e.g., Breakfast at Tiffany's" aria-label="e.g., Breakfast at Tiffany's" type="text">
+                    </section>
+                    <section>
+                        <span>When</span>
+                    </section>
+                    <section>
+
+                    </section>
+                    <footer class="footer">
+                        <a href="#" class="btn">Закрыть</a>
+                    </footer>
+                </aside>
             </div>
         </div>
     </body>
