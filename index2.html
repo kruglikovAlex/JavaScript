@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Calendar</title>
-        <meta name="description" content="Calendar with HTML5 and CSS3" />
+        <meta n AMe="description" content="Calendar with HTML5 and CSS3" />
         <link rel="stylesheet" type="text/css" href="css/calendarWeek.css" />
     </head>
     <body>
@@ -19,53 +19,234 @@
                     </nav>
                 </header>
                 <div class="pricing_table">
-                <table>
-                    <thead>
-                        <tr class="week">
-                            <th></th>
-                            <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-                        </tr>
-                        <tr class="day">
-                            <th></th>
-                            <th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
+                    <table>
+                        <thead>
+                            <tr class="week">
+                                <th></th>
+                                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                            </tr>
+                            <tr class="day">
+                                <th></th>
+                                <th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="allDay">all-day</td>
+                                <td class="allDay">
+                                    <span class="event-flex-container">
+                                        <article class="eventLabelBD" style="order: 1">2 birthdays</article>
+                                        <article class="eventLabelInfo" style="order: 2">Mark in town</article>
+                                    </span>
+                                </td><td class="allDay"></td><td class="allDay"></td><td class="allDay"></td><td class="allDay"></td><td class="allDay"></td><td class="allDay"></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">0 AM</td>
+                                <td>
+                                    <a class="addEvent" href="#modal">&emsp;Add Event</a>
+                                    <span class="event-flex-container">
+                                        <article class="eventLabelImportant" style="order: 0">Brunch with Mike 12-1:30 PM</article>
+                                        <article class="eventLabelBD" style="order: 1">Danis birthdays</article>
+                                        <article class="eventLabelInfo" style="order: 2">Mark in town</article>
+                                        <article class="eventLabelImportant" style="order: 0">Lanch with Alice 12-1:30 PM</article>
+                                        <article class="eventLabelBD" style="order: 1">Danis birthdays</article>
+                                        <article class="eventLabelInfo" style="order: 2">Mark in town</article>
+                                        <article class="eventLabelImportant" style="order: 0">Lanch with Alice 12-1:30 PM</article>
+                                        <article class="eventLabelBD" style="order: 1">Danis birthdays</article>
+                                        <article class="eventLabelInfo" style="order: 2">Mark in town</article>
+                                    </span>
+                                </td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">1 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">2 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">3 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">4 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">5 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">6 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">7 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">8 AM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">9 AM</td>
+                                <td>
+                                    <span class="event-flex-container">
+                                        <article class="eventLabelInfo" style="order: 2">Food market<h4>9 - 10 AM</h4></article>
+                                    </span>
+                                </td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">10 AM</td>
+                                <td></td>
+                                <td>
+                                    <span class="event-flex-container">
+                                        <article class="eventLabelInfo" style="order: 2; top: 60px; height: 180px; max-height: 180px; position: absolute;">Dentist appointment<h4>10:30 AM - 12 PM</h4></article>
+                                    </span>
+                                </td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">11 AM</td>
+                                <td>
+                                    <span class="event-flex-container">
+                                        <article class="eventLabelInfo" style="order: 2; height: 600px; max-height: 600px; position: absolute;">Picnic at Central Park <h4>11 AM-3 PM</h4></article>
+                                    </span>
+                                </td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">12 PM</td>
+                                <td></td><td></td>
+                                <td>
+                                    <span class="event-flex-container">
+                                        <article class="eventLabelImportant" style="order: 2; height: 180px; max-height: 180px; position: absolute;">Lanch with Alice M<h4>12 - 1:30 PM</h4></article>
+                                    </span>
+                                </td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">1 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">2 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">3 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">4 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">5 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">6 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">7 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">8 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">9 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">10 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                            <tr>
+                                <td class="allDay">11 PM</td>
+                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <aside class="modal" id="modal">
+                    <header>
+                        <h2>Event | Reminder</h2>
+                    </header>
+                    <section>
+                        <input tabindex="0" autocomplete="off" placeholder="e.g., Breakfast at Tiffany's" aria-label="e.g., Breakfast at Tiffany's" type="text">
+                    </section>
+                    <section>
+                        <span>When</span>
+                    </section>
+                    <section>
+
+                    </section>
+                    <footer class="footer">
+                        <a href="#" class="btn">Закрыть</a>
+                    </footer>
+                </aside>
+            </div>
+        </div>
+    </body>
+</html>
+<!--
+<tr>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_tmtime" datetime="all-day"><span>all-day</span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="00:00"><span>00:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="01:00"><span>01:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="02:00"><span>02:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="03:00"><span>03:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="04:00"><span>04:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="05:00"><span>05:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="06:00"><span>06:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="07:00"><span>07:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="08:00"><span>08:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="09:00"><span>09:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="10:00"><span>10:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="11:00"><span>11:00<h6>AM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="12:00"><span>12:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="13:00"><span>01:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="14:00"><span>02:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="15:00"><span>03:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="16:00"><span>04:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="17:00"><span>05:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="18:00"><span>06:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="19:00"><span>07:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="20:00"><span>08:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="21:00"><span>09:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="22:00"><span>10:00<h6>PM</h6></span></time></li>
-                                    <li><time class="cbp_tmtime" datetime="23:00"><span>11:00<h6>PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="00:00"><span>00<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="01:00"><span>01<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="02:00"><span>02<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="03:00"><span>03<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="04:00"><span>04<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="05:00"><span>05<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="06:00"><span>06<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="07:00"><span>07<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="08:00"><span>08<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="09:00"><span>09<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="10:00"><span>10<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="11:00"><span>11<h6> AM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="12:00"><span>12<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="13:00"><span>01<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="14:00"><span>02<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="15:00"><span>03<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="16:00"><span>04<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="17:00"><span>05<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="18:00"><span>06<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="19:00"><span>07<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="20:00"><span>08<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="21:00"><span>09<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="22:00"><span>10<h6> PM</h6></span></time></li>
+                                    <li><time class="cbp_tmtime" datetime="23:00"><span>11<h6> PM</h6></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
-                                    <li class="all-day"><time class="cbp_timeSun" datetime="all-day"><span></span></time></li>
+                                <div class="base">
+                                    <ul class="base-row">
+                                    <li class="all-day"><time class="cbp_timeSun" datetime="all-day">
+                                        <span>
+                                            <article class="eventLabelBD">2 birthdays</article>
+                                            <article class="eventLabelInfo">Mark in town</article>
+                                            
+                                        </span></time>
+                                    </li>
                                     <li><time class="cbp_timeSun" datetime="00:00">
-                                                <a class="addEvent" href="#modal">&emsp;Add Event</a>
+                                            <a class="addEvent" href="#modal">&emsp;Add Event</a>
+                                            <span>
+                                                <article class="eventLabelImportant">Lanch with Alice 12-1:30 PM</article>
+                                                <article class="eventLabelBD">Danis birthdays</article>
+                                                <article class="eventLabelInfo">Mark in town</article>
+                                                <article class="eventLabelImportant">Lanch with Alice 12-1:30 PM</article>
+                                                <article class="eventLabelBD">Danis birthdays</article>
+                                                <article class="eventLabelInfo">Mark in town</article>
+                                                <article class="eventLabelImportant">Lanch with Alice 12-1:30 PM</article>
+                                                <article class="eventLabelBD">Danis birthdays</article>
+                                                <article class="eventLabelInfo">Mark in town</article>
+                                            </span>
                                         </time>
                                     </li>
                                     <li><time class="cbp_timeSun" datetime="01:00"><span></span></time></li>
@@ -92,9 +273,11 @@
                                     <li><time class="cbp_timeSun" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeSun" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_timeMon" datetime="all-day"><span></span></time></li>
                                     <li><time class="cbp_timeMon" datetime="00:00"><span></span></time></li>
                                     <li><time class="cbp_timeMon" datetime="01:00"><span></span></time></li>
@@ -121,9 +304,11 @@
                                     <li><time class="cbp_timeMon" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeMon" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_timeTue" datetime="all-day"><span></span></time></li>
                                     <li><time class="cbp_timeTue" datetime="00:00"><span></span></time></li>
                                     <li><time class="cbp_timeTue" datetime="01:00"><span></span></time></li>
@@ -150,9 +335,11 @@
                                     <li><time class="cbp_timeTue" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeTue" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_timeWed" datetime="all-day"><span></span></time></li>
                                     <li><time class="cbp_timeWed" datetime="00:00"><span></span></time></li>
                                     <li><time class="cbp_timeWed" datetime="01:00"><span></span></time></li>
@@ -179,9 +366,11 @@
                                     <li><time class="cbp_timeWed" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeWed" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_timeThu" datetime="all-day"><span></span></time></li>
                                     <li><time class="cbp_timeThu" datetime="00:00"><span></span></time></li>
                                     <li><time class="cbp_timeThu" datetime="01:00"><span></span></time></li>
@@ -208,9 +397,11 @@
                                     <li><time class="cbp_timeThu" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeThu" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_timeFri" datetime="all-day"><span></span></time></li>
                                     <li><time class="cbp_timeFri" datetime="00:00"><span></span></time></li>
                                     <li><time class="cbp_timeFri" datetime="01:00"><span></span></time></li>
@@ -237,9 +428,11 @@
                                     <li><time class="cbp_timeFri" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeFri" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             <td>
-                                <ul class="cbp_tmtimeline">
+                                <div class="base">
+                                <ul class="base-row">
                                     <li class="all-day"><time class="cbp_timeSat" datetime="all-day"><span></span></time></li>
                                     <li><time class="cbp_timeSat" datetime="00:00"><span></span></time></li>
                                     <li><time class="cbp_timeSat" datetime="01:00"><span></span></time></li>
@@ -266,30 +459,8 @@
                                     <li><time class="cbp_timeSat" datetime="22:00"><span></span></time></li>
                                     <li><time class="cbp_timeSat" datetime="23:00"><span></span></time></li>
                                 </ul>
+                                </div>
                             </td>
                             
                         </tr>
-                    </tbody>
-                </table>
-            </div>
-                <aside class="modal" id="modal">
-                    <header>
-                        <h2>Event | Reminder</h2>
-                    </header>
-                    <section>
-                        <input tabindex="0" autocomplete="off" placeholder="e.g., Breakfast at Tiffany's" aria-label="e.g., Breakfast at Tiffany's" type="text">
-                    </section>
-                    <section>
-                        <span>When</span>
-                    </section>
-                    <section>
-
-                    </section>
-                    <footer class="footer">
-                        <a href="#" class="btn">Закрыть</a>
-                    </footer>
-                </aside>
-            </div>
-        </div>
-    </body>
-</html>
+-->
