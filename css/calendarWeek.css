@@ -236,42 +236,6 @@ nav menu {
 }
 
 
-/*
-nav .clearfix {
-    display: flex;
-    align-items: center;
-}
-
-nav .clearfix .mainHeader {
-    flex: 1;
-    margin-right: 2%;
-    font-size: 150%;
-}
-
-nav .clearfix menu {
-    flex: 3;
-}
-
-nav .clearfix menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav .clearfix menu a {
-    margin-right: 2%;
-}
-
-nav .clearfix menu span {
-    margin-right: 2%;
-}
-
-nav menu li {
-    overflow: hidden;
-}
-*/
-
-
 /* Стили для неактивного модального окна */
 
 .modal {
