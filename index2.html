@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Calendar</title>
-        <meta name="description" content="Calendar with HTML5 and CSS3" />
-        <link rel="stylesheet" type="text/css" href="css/calendarWeek.css" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="main">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calendar</title>
+    <meta name="description" content="Calendar with HTML5 and CSS3" />
+    <link rel="stylesheet" type="text/css" href="css/calendarWeek.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <nav>
                 <header class="clearfix">
-                    <h1>Calendar <span>February 2017</span></h1>
-                    <nav class="codrops-demos">
-                        <a href="index3.html">Day</a>
-                        <span>Week</span>
-                        <a href="index.html">Mounth</a>
-                        <a href="index4.html">4 Days</a>
-                    </nav>
+                    <div class="mainHeader">
+                        <h1>
+                            <span>February 2017</span>
+                        </h1>
+                    </div>
+                    <menu class="codrops-demos">
+                        <li><a href="index3.html">Day</a></li>
+                        <li><span>Week</span></li>
+                        <li><a href="index.html">Mounth</a></li>
+                        <li><a href="index4.html">4 Days</a></li>
+                    </menu>
                 </header>
-                <div class="pricing_table">
-                    <table>
-                        <thead>
-                            <tr class="week">
-                                <th></th>
-                                <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
-                            </tr>
-                            <tr class="day">
-                                <th></th>
-                                <th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="allDay">all-day</td>
-                                <td class="allDay">
-                                    <span class="event-flex-container">
+            </nav>
+            <div class="pricing_table">
+                <table>
+                    <thead>
+                        <tr class="week">
+                            <th></th>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                        <tr class="day">
+                            <th></th>
+                            <th>12</th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="allDay">all-day</td>
+                            <td class="allDay">
+                                <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; position: absolute;">
                                             Mark in town
                                             <h5 class="hide_context">
@@ -44,9 +64,10 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td class="allDay"></td>
-                                <td class="allDay">
-                                    <span class="event-flex-container">
+                            </td>
+                            <td class="allDay"></td>
+                            <td class="allDay">
+                                <span class="event-flex-container">
                                         <article class="eventLabelBD" style="order: 1; position: absolute;">
                                             2 birthdays
                                             <h5 class="hide_context">
@@ -57,7 +78,7 @@
                                             </h5>
                                         </article>
                                     </span>
-                                    <span class="event-flex-container">
+                                <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; top: 30px; position: absolute;">
                                             John in town
                                             <h5 class="hide_context">
@@ -67,9 +88,9 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td>
-                                <td class="allDay">
-                                    <span class="event-flex-container">
+                            </td>
+                            <td class="allDay">
+                                <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; position: absolute;">
                                             Pack luggage
                                             <h5 class="hide_context">
@@ -80,9 +101,10 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td class="allDay"></td>
-                                <td class="allDay">
-                                    <span class="event-flex-container">
+                            </td>
+                            <td class="allDay"></td>
+                            <td class="allDay">
+                                <span class="event-flex-container">
                                         <article class="eventLabelBD" style="order: 1; position: absolute;">
                                             3 birthdays
                                             <h5 class="hide_context">
@@ -94,9 +116,10 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td class="allDay"></td>
-                            </tr>
-                            <tr>
+                            </td>
+                            <td class="allDay"></td>
+                        </tr>
+                        <tr>
                             <tr>
                                 <td class="allDay">9 AM</td>
                                 <td>
@@ -116,7 +139,13 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">10 AM</td>
@@ -134,7 +163,12 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td></td><td></td><td></td><td></td><td></td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">11 AM</td>
@@ -160,7 +194,8 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td></td>
+                                </td>
+                                <td></td>
                                 <td>
                                     <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; height: 60px; max-height: 60px; position: absolute;">
@@ -172,7 +207,8 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td></td>
+                                </td>
+                                <td></td>
                                 <td>
                                     <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; height: 60px; max-height: 60px; position: absolute;">
@@ -198,7 +234,8 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td></td>
+                                </td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">12 PM</td>
@@ -212,11 +249,18 @@
                                     <span class="event-flex-container">
                                         <article class="eventLabelImportant" style="order: 0; height: 180px; max-height: 180px; position: absolute;">Lanch with Alice <h4>12 - 1:30 PM</h4></article>
                                     </span>
-                                </td><td></td><td></td><td></td><td></td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">1 PM</td>
-                                <td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td>
                                     <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; height: 635px; max-height: 635px; position: absolute;">
@@ -230,11 +274,19 @@
                                             </h5>
                                         </article>
                                     </span>
-                                </td><td></td><td></td>
+                                </td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">2 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">3 PM</td>
@@ -243,61 +295,115 @@
                                     <span class="event-flex-container">
                                         <article class="eventLabelInfo" style="order: 2; height: 60px; max-height: 60px; position: absolute;">Call with Lucas</article>
                                     </span>
-                                </td><td></td><td></td><td></td><td></td><td></td>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">4 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">5 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">6 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">7 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">8 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">9 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">10 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
                             <tr>
                                 <td class="allDay">11 PM</td>
-                                <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <aside class="modal" id="modal">
-                    <header>
-                        <h2>Event | Reminder</h2>
-                    </header>
-                    <section>
-                        <input tabindex="0" autocomplete="off" placeholder="e.g., Breakfast at Tiffany's" aria-label="e.g., Breakfast at Tiffany's" type="text">
-                    </section>
-                    <section>
-                        <span>When</span>
-                    </section>
-                    <section>
-
-                    </section>
-                    <footer class="footer">
-                        <a href="#" class="button">Close</a>
-                    </footer>
-                </aside>
+                    </tbody>
+                </table>
             </div>
+            <aside class="modal" id="modal">
+                <header>
+                    <h2>Event | Reminder</h2>
+                </header>
+                <section>
+                    <input tabindex="0" autocomplete="off" placeholder="e.g., Breakfast at Tiffany's" aria-label="e.g., Breakfast at Tiffany's" type="text">
+                </section>
+                <section>
+                    <span>When</span>
+                </section>
+                <section>
+
+                </section>
+                <footer class="footer">
+                    <a href="#" class="button">Close</a>
+                </footer>
+            </aside>
         </div>
-    </body>
+    </div>
+</body>
+
 </html>

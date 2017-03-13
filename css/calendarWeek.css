@@ -1,218 +1,279 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-body, html { font-size: 100%; padding: 0; margin: 0;}
-
-.clearfix{
-	background-image: url(images/london2.png);
-	background-position: left bottom; /* Положение фона */
-    background-repeat: no-repeat; /* Отменяем повторение фона */
-	background-size: 100%;
-	/*opacity: 0.5;*/
-	/*background: linear-gradient(to top, #fefcea, #f1da36);*/
-	/*background-size: cover;*/
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.clearfix:before, .clearfix:after { content: " "; display: table; }
-.clearfix:after { clear: both; }
+
+body,
+html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Lato', Calibri, Arial, sans-serif;
     color: #000;
 }
-a {
-	text-decoration: none;
+
+table {
+    margin: 10px auto;
+    border-radius: 20px 20px 20px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
-a:hover {
-	color: #000;
+
+tbody {
+    padding: 10px;
+    float: none;
+    font-weight: 300;
+    min-height: 30px;
+    box-shadow: inset -1px -1px rgba(255, 255, 255, 0.2);
 }
-.codrops-demos {
-	float: right;
+
+.week {
+    text-indent: -20px;
+    font-size: 13px;
+    line-height: 15px;
 }
-.codrops-demos a {
-    display: inline-block;
-    margin: 10px;
+
+.day {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+td {
+    width: 200px;
+    height: 120px;
+    color: #000;
+    font-size: 26px;
+    font-weight: 300;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    border-collapse: collapse;
+    border: 1px solid maroon;
+    border-left: none;
+    border-bottom: none;
+    z-index: auto;
+}
+
+.allDay {
+    width: 120px;
+    height: 81px;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+thead,
+tfoot {
+    height: 30px;
+    line-height: 30px;
+    transition: background .2s .1s;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+}
+
+thead th {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+tfoot th {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+td:hover:not(.allDay) {
+    background: rgba(115, 255, 111, 0.4);
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, .7);
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+td>span.event-flex-container {
+    display: table-cell;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+td>span {
+    margin: 1px;
+    padding: 1px;
+    padding-block-end: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+td>span .eventLabelImportant {
+    margin: 1px;
+    width: 97%;
+    background: #F77016;
+    border: 1px solid #F77016;
+    border-radius: 5px;
+}
+
+td>span .eventLabelInfo {
+    margin: 1px;
+    width: 97%;
+    background: #04ABDE;
+    background-size: 100%;
+    border: 1px solid #04ABDE;
+    border-radius: 5px;
+}
+
+td>span .eventLabelBD {
+    margin: 1px;
+    width: 97%;
+    background: #039C1A;
+    border: 1px solid #039C1A;
+    border-radius: 5px;
+}
+
+td>a.addEvent {
+    font-size: 12px;
+    color: gray;
+}
+
+td>span.event-flex-container:active .eventLabelInfo,
+td>span.event-flex-container:active .eventLabelBD,
+td>span.event-flex-container:active .eventLabelImportant {
+    display: table-caption;
+    position: absolute;
+    transform: scaleX(1.0);
+    top: 70px;
+    z-index: 999;
+    width: 250px;
+    min-height: 300px;
+    color: #000;
+    background: ghostwhite;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, .7);
+    border: 1px solid #000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 5px solid #eb9816;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+td>span.event-flex-container .hide_context {
+    display: none;
+}
+
+td>span.event-flex-container:active .hide_context li {
+    text-align: left;
+}
+
+td>span.event-flex-container:active .hide_context {
+    display: block;
+}
+
+td>ul {
+    list-style: none;
+}
+
+
+/* flex */
+
+nav {
+    background-image: url(images/london2.png);
+    /* Положение фона */
+    background-repeat: no-repeat;
+    /* Отменяем повторение фона */
+    background-size: cover;
+}
+
+nav .mainHeader {
+    padding: 10px 0 10px 20px;
+}
+
+nav menu a,
+nav menu li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 120%;
     color: inherit;
     font-weight: 700;
     line-height: 30px;
     border-bottom: 4px solid transparent;
-}
-.codrops-demos a:hover {
-	color: #000;
-	border-color: #000;
-}
-.codrops-demos a.current-demo,
-.codrops-demos a.current-demo:hover {
-	color: rgba(94,114,124,0.5);
-	border-color: rgba(94,114,124,0.5);
-}
-.main {
-	text-indent: 10px;
-}
-.container header h1 {
-	font-size: 34px;
-	line-height: 55px;
-	margin: 0;
-	font-weight: 700;
-	float: left;
-}
-.container header h1 span {
-	font-size: 18px;
-	font-weight: 400;
-	display: block;
-	text-align: right;
-}
-.container > header nav a:hover:before {
-	color: #fff;
-}
-table {
-	margin: 10px auto;
-
-	border-radius: 20px 20px 20px 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-tbody {
-	padding: 10px;
-	float: none;
-	font-weight: 300;
-	min-height: 30px;
-	box-shadow: inset -1px -1px rgba(255,255,255,0.2);
-}
-.week{
-	text-indent: -20px;
-	font-size: 13px;
-	line-height: 15px;
-}
-.day{
-	font-size: 45px;
-	line-height: 45px;
-}
-td {
-	width: 200px;
-	height: 120px;
-	color: #000;
-	font-size: 26px;
-	font-weight: 300;
-	position: relative;
-	text-align: left;
-	vertical-align: top;
-	border-collapse: collapse;
-	border: 1px solid maroon;
-	border-left: none;
-	border-bottom: none;
-	z-index: auto;
-}
-.allDay{
-	width: 120px;
-	height: 81px;
-	font-size: 20px;
-	text-align: right;
-	padding-right: 20px;
-}
-thead,tfoot{
-	height: 30px;
-	line-height: 30px;
-	transition: background .2s .1s;
-	letter-spacing: 6px;
-	text-transform: uppercase;
-}
-thead th{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-	background: rgba(255,255,255,0.25);
-}
-tfoot th{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-	background: rgba(255,255,255,0.25);
-}
-td:hover:not(.allDay){ 
-	background: rgba(115,255,111,0.4);
-  	box-shadow:3px 5px 7px rgba(0,0,0,.7);
-	cursor:pointer;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-}
-td > span.event-flex-container{
-	display: table-cell;
-	flex-direction: column;
-	justify-content: space-between;
-}
-td > span{
-	margin: 1px;
-	padding: 1px;
-	padding-block-end: 1px;
-	font-size: 18px;
-	font-weight: 700;
-	text-align: center;
-	color: white;
-}
-td > span .eventLabelImportant{
-	margin: 1px;
-	width: 97%;
-	background: #F77016;
-	border: 1px solid #F77016;
-	border-radius: 5px;
-}
-td > span .eventLabelInfo{
-	margin: 1px;
-	width: 97%;
-	background: #04ABDE;
-	background-size: 100%;
-	border: 1px solid #04ABDE;
-	border-radius: 5px;
-}
-td > span .eventLabelBD{
-	margin: 1px;
-	width: 97%;
-	background: #039C1A;
-	border: 1px solid #039C1A;
-	border-radius: 5px;
-}
-td > a.addEvent{
-	font-size: 12px;
-	color:gray;
+    letter-spacing: 0.8em;
 }
 
-td > span.event-flex-container:active .eventLabelInfo,
-td > span.event-flex-container:active .eventLabelBD,
-td > span.event-flex-container:active .eventLabelImportant{
-	display: table-caption;
-    position:absolute;
-	transform: scaleX(1.0);
-    top:70px;
-    z-index:999;
-    width:250px;
-	min-height: 300px;
-	color: #000;
-	background: ghostwhite;
-	box-shadow:3px 5px 7px rgba(0,0,0,.7);
-	border: 1px solid #000;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border-top: 5px solid #eb9816;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+nav menu a:hover {
+    color: #000;
+    border-color: #000;
 }
 
-td > span.event-flex-container .hide_context{
-	display: none;
+nav .clearfix {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-td > span.event-flex-container:active .hide_context li{
-	text-align: left;
+
+nav .mainHeader {
+    flex: 1 1 auto;
 }
-td > span.event-flex-container:active .hide_context{
-	display: block;
+
+nav menu {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    padding: 5px 0;
+    flex-wrap: wrap;
 }
-td > ul{
-	list-style: none;
+
+
+/*
+nav .clearfix {
+    display: flex;
+    align-items: center;
 }
+
+nav .clearfix .mainHeader {
+    flex: 1;
+    margin-right: 2%;
+    font-size: 150%;
+}
+
+nav .clearfix menu {
+    flex: 3;
+}
+
+nav .clearfix menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .clearfix menu a {
+    margin-right: 2%;
+}
+
+nav .clearfix menu span {
+    margin-right: 2%;
+}
+
+nav menu li {
+    overflow: hidden;
+}
+*/
+
 
 /* Стили для неактивного модального окна */
+
 .modal {
     background: #fff;
     left: 50%;
@@ -221,9 +282,9 @@ td > ul{
     top: -50%;
     width: 450px;
     border-radius: 5px;
-    box-shadow: 0 3px 7px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 7px rgba(0,0,0,.25);
-    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,.25);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, .25);
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -231,6 +292,7 @@ td > ul{
 
 
 /* Активация модального окна в состоянии :target */
+
 .modal:target {
     top: 50%;
     transition: all 0.4s ease-in-out;
@@ -238,28 +300,35 @@ td > ul{
     -webkit-transition: all 0.4s ease-in-out;
 }
 
-.modal header, .modal footer {
+.modal header,
+.modal footer {
     background: #f7f7f7;
     border-bottom: 1px solid #e7e7e7;
     border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
 }
+
 .modal footer {
-    border:none;
+    border: none;
     border-top: 1px solid #e7e7e7;
     border-radius: 0 0 5px 5px;
     -moz-border-radius: 0 0 5px 5px;
     -webkit-border-radius: 0 0 5px 5px;
 }
-.modal section, .modal header, .modal footer {
+
+.modal section,
+.modal header,
+.modal footer {
     padding: 15px;
     z-index: 200;
 }
+
 .modal h2 {
     margin: 0;
 }
+
 .modal .button {
     float: right;
-	margin: 5px;
+    margin: 5px;
 }
