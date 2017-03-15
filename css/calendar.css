@@ -196,7 +196,40 @@ td:hover:not(.allDay) {
     border-top-right-radius: 10px;
 }
 
-@media screen and (max-width: 600px) {
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav .mainHeader {
+        text-align: center;
+        font-size: 100%;
+    }
+    nav menu {
+        font-size: 90%;
+    }
+    .day {
+        font-size: 150%;
+    }
+    .week {
+        font-size: 70%;
+    }
+    table td:not([data-label="all-day"]) {
+        border: 2px solid #ddd;
+    }
+    table td {
+        border-bottom: 2px solid #ddd;
+    }
+    td>span.event-flex-container .eventLabelInfo,
+    td>span.event-flex-container .eventLabelImportant,
+    td>span.event-flex-container .eventLabelBD {
+        font-size: 80%;
+    }
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
     nav .mainHeader {
         text-align: center;
         font-size: 100%;
