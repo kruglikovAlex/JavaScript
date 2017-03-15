@@ -58,7 +58,7 @@ nav menu {
 table {
     /*border: 1px solid #ccc;*/
     border-collapse: collapse;
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
     table-layout: fixed;
     width: 100%;
@@ -69,25 +69,34 @@ table tr {
     padding: .35em;
 }
 
-table th,
-table td {
-    padding: .625em;
+table th {
     text-align: center;
 }
 
 table td {
+    text-align: right;
+    padding-right: 10px;
+}
+
+table td:not([data-label="all-day"]) {
     border: 1px solid #ddd;
+    vertical-align: top;
+}
+
+td.allDay[data-label="all-day"] {
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
 }
 
 .week {
-    text-indent: -10%;
+    text-indent: -2%;
     font-size: 75%;
     line-height: 50%;
 }
 
 .day {
     font-size: 250%;
-    line-height: 10%;
+    line-height: 90%;
 }
 
 
@@ -99,7 +108,6 @@ td>span.event-flex-container:active .eventLabelImportant {
     display: table-caption;
     position: relative;
     transform: scaleX(1.0);
-    /*top: 70px;*/
     z-index: 999;
     width: 110%;
     min-height: 110%;
@@ -133,7 +141,7 @@ td>ul {
 td>span.event-flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 td span .eventLabelBD,
@@ -222,7 +230,7 @@ td:hover:not(.allDay) {
         display: initial;
     }
     td>span.event-flex-container div:not(.hide_context) {
-        padding-left: 25%;
+        padding-left: 5%;
     }
     td>span.event-flex-container div.hide_context {
         display: initial;
@@ -233,5 +241,7 @@ td:hover:not(.allDay) {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        align-self: center;
+        flex-wrap: wrap;
     }
 }
