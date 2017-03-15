@@ -29,29 +29,28 @@ table {
 }
 
 tbody {
-    padding: 10px;
+    padding: 5px;
     float: none;
     font-weight: 300;
-    min-height: 30px;
     box-shadow: inset -1px -1px rgba(255, 255, 255, 0.2);
 }
 
 .week {
-    text-indent: -20px;
-    font-size: 13px;
-    line-height: 15px;
+    text-indent: -10%;
+    font-size: 75%;
+    line-height: 100%;
 }
 
 .day {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 250%;
+    line-height: 100%;
 }
 
 td {
-    width: 200px;
+    width: 12.5%;
     height: 120px;
     color: #000;
-    font-size: 26px;
+    font-size: 120%;
     font-weight: 300;
     position: relative;
     text-align: left;
@@ -64,11 +63,11 @@ td {
 }
 
 .allDay {
-    width: 120px;
-    height: 81px;
-    font-size: 20px;
+    width: 5%;
+    height: 80px;
+    font-size: 120%;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 1%;
 }
 
 thead,
@@ -105,7 +104,7 @@ td:hover:not(.allDay) {
 td>span.event-flex-container {
     display: table-cell;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 td>span {
@@ -209,7 +208,7 @@ nav menu li {
     font-weight: 700;
     line-height: 30px;
     border-bottom: 4px solid transparent;
-    letter-spacing: 0.8em;
+    letter-spacing: 0.5em;
 }
 
 nav menu a:hover {
@@ -225,6 +224,7 @@ nav .clearfix {
 
 nav .mainHeader {
     flex: 1 1 auto;
+    padding: 5px 15px;
 }
 
 nav menu {
@@ -233,6 +233,41 @@ nav menu {
     justify-content: space-around;
     padding: 5px 0;
     flex-wrap: wrap;
+}
+
+@media all and (max-width: 650px) {
+    nav .mainHeader {
+        text-align: center;
+        font-size: 100%;
+    }
+    nav menu {
+        font-size: 80%;
+    }
+    .day {
+        font-size: 120%;
+    }
+    .week {
+        font-size: 50%;
+    }
+    tbody span article {
+        font-size: 60%;
+    }
+    table thead {
+        display: none;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+    }
+    table td:before {
+        content: attr(data-label);
+        float: left;
+    }
 }
 
 
